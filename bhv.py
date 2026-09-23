@@ -265,7 +265,7 @@ while True:
 		os.system("pkg install git")
 		GY = os.path.expanduser("/data/data/com.termux/files/home")
 		os.chdir(GY)
-		os.system("rm -rf BHVx777")
+		os.system("rm -rf BHVx777-menu")
 		input(f"{SARI}DEVAM ET{RESET}")
 		os.system("git clone https://github.com/bhv-777/BHVx777-menu.git")
 		input(f"{SARI}Enter'a basarak yaapılacak adımları izleyin{RESET}")
@@ -276,7 +276,7 @@ while True:
 		    time.sleep(0.05)
 		time.sleep(3.5)
 		input(f"{YESIL}Devam etmek için enter'a basın{RESET}")
-		os.execv(sys.executable, [sys.executable, os.path.join(GY, "BHVx777", "main.py")])
+		os.execv(sys.executable, [sys.executable, os.path.join(GY, "BHVx777-menu", "main.py")])
 		os.system("clear")
 
 
