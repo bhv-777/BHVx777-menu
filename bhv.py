@@ -269,7 +269,7 @@ while True:
 		os.system("git clone https://github.com/bhv-777/BHVx777-menu.git")
 		os.execv(sys.executable, [sys.executable, os.path.join(GY, "BHVx777-menu", "bhv.py")])
 		print(f"{YESIL}Succes{RESET}")
-		time.sleep((2.4)
+		time.sleep(2.4)
 		os.system("clear")
 
 
