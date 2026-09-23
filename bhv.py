@@ -266,17 +266,10 @@ while True:
 		GY = os.path.expanduser("/data/data/com.termux/files/home")
 		os.chdir(GY)
 		os.system("rm -rf BHVx777-menu")
-		input(f"{SARI}DEVAM ET{RESET}")
 		os.system("git clone https://github.com/bhv-777/BHVx777-menu.git")
-		input(f"{SARI}Enter'a basarak yaapılacak adımları izleyin{RESET}")
-		GN = f"{CYAN}Aşağıdaki komutu kopyalayın ve terminalinize yapıştırarak çalıştırın{RESET}\n\n{YESIL}■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■{RESET}\n\ncd && cd BHVx777-menu && python bhv.py\n\n{YESIL}■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■\n\n{CYAN}Komutu çalıştırmadan önce menüden çıkın 99 yapın{RESET}\n\n{YESIL}■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■{RESET}\n\n"
-		for güncelleNot in GN:
-		    sys.stdout.write(güncelleNot)
-		    sys.stdout.flush()
-		    time.sleep(0.05)
-		time.sleep(3.5)
-		input(f"{YESIL}Devam etmek için enter'a basın{RESET}")
-		os.execv(sys.executable, [sys.executable, os.path.join(GY, "BHVx777-menu", "main.py")])
+		os.execv(sys.executable, [sys.executable, os.path.join(GY, "BHVx777-menu", "bhv.py")])
+		print(f"{YESIL}Succes{RESET}")
+		time.sleep((2.4)
 		os.system("clear")
 
 
