@@ -239,7 +239,7 @@ while True:
 				os.chdir(dy)
 				dsp = input(f"{SARI}Sitenin açık port'unu girin{RESET}:    ")
 				os.system(f"python3 DRipper.py -s {dsi} -p {dsp} -t {dpst}")
-				input(f"{KIRMIZI}DDOS{RESET} {CYAN}saldırısı bitmiştir devam etmek için enter'a tıklayın{RESET}")P
+				input(f"{KIRMIZI}DDOS{RESET} {CYAN}saldırısı bitmiştir devam etmek için enter'a tıklayın{RESET}")
 				os.system("clear")
 			elif dps == "Y":
 				dy2 = os.path.expanduser("~/BHVx777-menu/DDoS-Ripper")
